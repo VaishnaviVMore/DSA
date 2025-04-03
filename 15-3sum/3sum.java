@@ -19,8 +19,12 @@ class Solution {
                 k--;
             }
             else{
+                List<Integer> triplet = new ArrayList<>();
+                triplet.add(nums[i]);
+                triplet.add(nums[j]);
+                triplet.add(nums[k]);
+                list.add(triplet);
 
-                list.add(Arrays.asList(nums[i],nums[j],nums[k]));
                 while(j<k && nums[j] == nums[j+1]){
                     j++;
                 }
