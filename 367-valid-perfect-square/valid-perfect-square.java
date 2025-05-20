@@ -4,7 +4,8 @@ class Solution {
             return true;
         }
 
-        long left = 2, right = num / 2;
+        long left = 2;
+        long right = num / 2;
 
         while (left <= right) {
             long mid = left + (right - left) / 2;
