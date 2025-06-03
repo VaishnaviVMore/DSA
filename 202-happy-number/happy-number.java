@@ -14,9 +14,7 @@ class Solution {
             if(Used.contains(n)){
                 return false;
             }
-            else{
                 Used.add(n);
-            }
         }
     }
 }
