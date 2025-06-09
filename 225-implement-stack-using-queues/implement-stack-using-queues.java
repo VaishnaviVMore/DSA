@@ -16,15 +16,15 @@ class MyStack {
     }
     
     public int pop() {
-        // if(!Qu.empty()){
-        //     return -1;
+        // if(!Qu.isEmpty()){
+        //     return 0;
         // }
         return Qu.remove();
     }
     
     public int top() {
-        // if(!Qu.empty()){
-        //     return -1;
+        // if(!Qu.isEmpty()){
+        //     return 0;
         // }
         return Qu.peek();
     }
