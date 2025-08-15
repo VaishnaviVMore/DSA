@@ -5,7 +5,8 @@ class Solution {
         for(char ch:s.toCharArray()){
             sb.append(ch);
             if(sb.length()>=m && sb.substring(sb.length()-m).equals(part)){
-                sb.delete(sb.length()-m,sb.length());
+                //sb.delete(sb.length()-m,sb.length());
+                sb.setLength(sb.length()-m);
             }
         }
         return sb.toString();
