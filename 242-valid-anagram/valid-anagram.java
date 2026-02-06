@@ -1,12 +1,9 @@
 class Solution {
     public boolean isAnagram(String s, String t) {
-        if(s.length()!=t.length()){
-            return false;
-        }
-        char so[]=s.toCharArray();
-        char to[]=t.toCharArray();
-        Arrays.sort(so);
-        Arrays.sort(to);
-        return Arrays.equals(so,to);
+        String[] ch1=s.split("");
+        String[] ch2=t.split("");
+        Arrays.sort(ch1);
+        Arrays.sort(ch2);
+        return Arrays.equals(ch1,ch2);
     }
 }
