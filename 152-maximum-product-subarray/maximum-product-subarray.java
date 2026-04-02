@@ -4,11 +4,11 @@ class Solution {
         int n=nums.length;
         int maxi=Integer.MIN_VALUE;
         for(int i=0;i<n;i++){
-            if(pre==0) pre=1;
-            if(suff==0) suff=1;
+            if(pre==0)pre=1;
+            if(suff==0)suff=1;
             pre=pre*nums[i];
-            suff=suff*nums[n-i-1];
-            maxi=Math.max(maxi,Math.max(pre,suff));
+            suff=suff*nums[n-1-i];
+            maxi=Math.max(maxi,(Math.max(pre,suff)));
         }
         return maxi;
     }
